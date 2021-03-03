@@ -1,0 +1,8 @@
+# Pycharm Config
+.idea/
+
+# Virtual Environment
+venv/
+
+# Egg-Info
+/Apartment_Alert.egg-info/

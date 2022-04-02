@@ -7,7 +7,7 @@ import sys
 from ApartmentAlert.scrapers import check_for_wggesucht, check_for_immonet, check_for_immobilienscout
 
 
-@click.command()
+@click.command(startAgent)
 @click.option('--immoscout_url', required=True, type=str)
 @click.option('--immonet_url', required=True, type=str)
 @click.option('--wggesucht_url', required=True, type=str)

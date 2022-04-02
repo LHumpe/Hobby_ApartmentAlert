@@ -17,7 +17,7 @@ from ApartmentAlert.scrapers import check_for_wggesucht, check_for_immonet, chec
 @click.option('--smtp_server', required=True, type=str)
 @click.option('--log_path', required=True, type=str)
 @click.option('--stop_time', required=False, type=str)
-def _start_Agent(immoscout_url: str, immonet_url: str, wggesucht_url: str,
+def startAgent(immoscout_url: str, immonet_url: str, wggesucht_url: str,
                  from_mail: str, to_mail: str, pw_mail: str, smtp_server: str,
                  log_path: str, stop_time: str = None):
     log_file = open('{}/{}.txt'.format(log_path, datetime.datetime.now().strftime('%d_%b_%y|%H:%M:%S')), 'w')

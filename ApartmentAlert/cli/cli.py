@@ -1,5 +1,5 @@
 import click
-from ._search import startAgent
+from ._search import _start_Agent
 
 @click.group()
 def cli():
@@ -9,4 +9,4 @@ def cli():
     """
     pass
 
-cli.add_command(startAgent)
+cli.add_command(_start_Agent)

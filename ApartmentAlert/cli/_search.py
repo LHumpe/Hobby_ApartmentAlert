@@ -21,6 +21,8 @@ def _start_Agent(immoscout_url: str, immonet_url: str, wggesucht_url: str,
                  log_path: str, stop_time: str = None):
     log_file = open('{}/{}.txt'.format(log_path, datetime.datetime.now().strftime('%d_%b_%y|%H:%M:%S')), 'w')
     sys.stdout = log_file
+    
+    to_mail = eval(to_mail)
 
     check_for_immobilienscout(immoscout_url, from_mail, to_mail, pw_mail, smtp_server)
     check_for_immonet(immonet_url, from_mail, to_mail, pw_mail, smtp_server)

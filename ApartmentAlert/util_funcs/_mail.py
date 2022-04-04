@@ -7,7 +7,7 @@ from typing import List
 
 def sendemail(from_addr: str, to_addr: List[str], subject: str, message: str, login: str, password: str,
               smtpserver: str):
-    server = smtplib.SMTP(smtpserver)
+    server = smtplib.SMTP(smtpserver, 587)
     server.starttls()
     server.login(login, password)
     

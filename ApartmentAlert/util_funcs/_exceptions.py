@@ -2,7 +2,7 @@ import functools
 import schedule
 
 
-def catch_exceptions(job_func, cancel_on_failure: bool = False):
+def catch_exceptions(job_func, cancel_on_failure: bool = True):
     @functools.wraps(job_func)
     def wrapper(*args, **kwargs):
         try:

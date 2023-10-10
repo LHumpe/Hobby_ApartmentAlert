@@ -8,7 +8,5 @@ setup(
     author_email='l.humpe@hotmail.de',
     packages=find_namespace_packages(include=['*']),
     install_requires=['schedule', 'requests', 'beautifulsoup4', 'click','lxml'],
-    entry_points={
-        'console_scripts': ['ApartmentAlert=ApartmentAlert:cli']
-    }
+    entry_points={'console_scripts': ['ApartmentAlert=ApartmentAlert.cli.cli:cli']}
 )
